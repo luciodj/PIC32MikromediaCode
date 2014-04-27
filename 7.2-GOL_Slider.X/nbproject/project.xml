@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>com.microchip.mplab.nbide.embedded.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>7-GOL_Slider</name>
+            <creation-uuid>130cc45a-6cdf-4d10-943b-120c635afcdd</creation-uuid>
+            <make-project-type>0</make-project-type>
+            <c-extensions>c</c-extensions>
+            <cpp-extensions/>
+            <header-extensions>h</header-extensions>
+            <sourceEncoding>ISO-8859-1</sourceEncoding>
+            <asminc-extensions/>
+            <make-dep-projects/>
+        </data>
+    </configuration>
+</project>

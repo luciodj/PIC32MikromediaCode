@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Graphics_Resource_Converter>
+<Configuration>
+<major>3</major>
+<minor>28</minor>
+<compiler>C30/XC16</compiler>
+<format>CArray</format>
+<graphics_module>false</graphics_module>
+<bitmap_padding_type>padding</bitmap_padding_type>
+<graphics_model>16 bpp</graphics_model>
+</Configuration>
+<Bitmaps>
+<Bitmap_Resource>
+<label>flower</label>
+<path>flower.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>folder</label>
+<path>folder.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+<Bitmap_Resource>
+<label>fingerprint</label>
+<path>fingerprint.bmp</path>
+<compression>None</compression>
+</Bitmap_Resource>
+</Bitmaps>
+<Fonts>
+<Font_Resource>
+<label>Monospaced_12</label>
+<name>Monospaced</name>
+<size>12</size>
+<height>12</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>127</last_character>
+<font_filter>None</font_filter>
+</Font_Resource>
+<Font_Resource>
+<label>Lucida_Sans_Typewriter_Regular_12</label>
+<name>Lucida Sans Typewriter</name>
+<size>12</size>
+<height>15</height>
+<anti_aliasing>2 bits per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>126</last_character>
+<font_filter>None</font_filter>
+</Font_Resource>
+</Fonts>
+</Graphics_Resource_Converter>
