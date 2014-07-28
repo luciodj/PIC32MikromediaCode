@@ -45,17 +45,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=../../Mikromedia/Microchip/Common/TimeDelay.c ../../Mikromedia/Microchip/Graphics/Primitive.c ../../Mikromedia/Microchip/Graphics/Drivers/HX8347.c ../../Mikromedia/Microchip/Graphics/GOLFontDefault.c ../../Mikromedia/Microchip/Graphics/Drivers/IL9341.c main.c resources.c
+SOURCEFILES_QUOTED_IF_SPACED=../Microchip/Common/TimeDelay.c ../Microchip/Graphics/Primitive.c ../Microchip/Graphics/Drivers/HX8347.c ../Microchip/Graphics/GOLFontDefault.c ../Microchip/Graphics/Drivers/IL9341.c main.c resources.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1904715551/TimeDelay.o ${OBJECTDIR}/_ext/72748031/Primitive.o ${OBJECTDIR}/_ext/121592547/HX8347.o ${OBJECTDIR}/_ext/72748031/GOLFontDefault.o ${OBJECTDIR}/_ext/121592547/IL9341.o ${OBJECTDIR}/main.o ${OBJECTDIR}/resources.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1904715551/TimeDelay.o.d ${OBJECTDIR}/_ext/72748031/Primitive.o.d ${OBJECTDIR}/_ext/121592547/HX8347.o.d ${OBJECTDIR}/_ext/72748031/GOLFontDefault.o.d ${OBJECTDIR}/_ext/121592547/IL9341.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/resources.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/221508487/TimeDelay.o ${OBJECTDIR}/_ext/1713430119/Primitive.o ${OBJECTDIR}/_ext/1575306571/HX8347.o ${OBJECTDIR}/_ext/1713430119/GOLFontDefault.o ${OBJECTDIR}/_ext/1575306571/IL9341.o ${OBJECTDIR}/main.o ${OBJECTDIR}/resources.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/221508487/TimeDelay.o.d ${OBJECTDIR}/_ext/1713430119/Primitive.o.d ${OBJECTDIR}/_ext/1575306571/HX8347.o.d ${OBJECTDIR}/_ext/1713430119/GOLFontDefault.o.d ${OBJECTDIR}/_ext/1575306571/IL9341.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/resources.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/1904715551/TimeDelay.o ${OBJECTDIR}/_ext/72748031/Primitive.o ${OBJECTDIR}/_ext/121592547/HX8347.o ${OBJECTDIR}/_ext/72748031/GOLFontDefault.o ${OBJECTDIR}/_ext/121592547/IL9341.o ${OBJECTDIR}/main.o ${OBJECTDIR}/resources.o
+OBJECTFILES=${OBJECTDIR}/_ext/221508487/TimeDelay.o ${OBJECTDIR}/_ext/1713430119/Primitive.o ${OBJECTDIR}/_ext/1575306571/HX8347.o ${OBJECTDIR}/_ext/1713430119/GOLFontDefault.o ${OBJECTDIR}/_ext/1575306571/IL9341.o ${OBJECTDIR}/main.o ${OBJECTDIR}/resources.o
 
 # Source Files
-SOURCEFILES=../../Mikromedia/Microchip/Common/TimeDelay.c ../../Mikromedia/Microchip/Graphics/Primitive.c ../../Mikromedia/Microchip/Graphics/Drivers/HX8347.c ../../Mikromedia/Microchip/Graphics/GOLFontDefault.c ../../Mikromedia/Microchip/Graphics/Drivers/IL9341.c main.c resources.c
+SOURCEFILES=../Microchip/Common/TimeDelay.c ../Microchip/Graphics/Primitive.c ../Microchip/Graphics/Drivers/HX8347.c ../Microchip/Graphics/GOLFontDefault.c ../Microchip/Graphics/Drivers/IL9341.c main.c resources.c
 
 
 CFLAGS=
@@ -91,90 +91,90 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/_ext/1904715551/TimeDelay.o: ../../Mikromedia/Microchip/Common/TimeDelay.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1904715551 
-	@${RM} ${OBJECTDIR}/_ext/1904715551/TimeDelay.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1904715551/TimeDelay.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1904715551/TimeDelay.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1904715551/TimeDelay.o.d" -o ${OBJECTDIR}/_ext/1904715551/TimeDelay.o ../../Mikromedia/Microchip/Common/TimeDelay.c   -legacy-libc
+${OBJECTDIR}/_ext/221508487/TimeDelay.o: ../Microchip/Common/TimeDelay.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/221508487 
+	@${RM} ${OBJECTDIR}/_ext/221508487/TimeDelay.o.d 
+	@${RM} ${OBJECTDIR}/_ext/221508487/TimeDelay.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/221508487/TimeDelay.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/221508487/TimeDelay.o.d" -o ${OBJECTDIR}/_ext/221508487/TimeDelay.o ../Microchip/Common/TimeDelay.c   -legacy-libc
 	
-${OBJECTDIR}/_ext/72748031/Primitive.o: ../../Mikromedia/Microchip/Graphics/Primitive.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/72748031 
-	@${RM} ${OBJECTDIR}/_ext/72748031/Primitive.o.d 
-	@${RM} ${OBJECTDIR}/_ext/72748031/Primitive.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/72748031/Primitive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/72748031/Primitive.o.d" -o ${OBJECTDIR}/_ext/72748031/Primitive.o ../../Mikromedia/Microchip/Graphics/Primitive.c   -legacy-libc
+${OBJECTDIR}/_ext/1713430119/Primitive.o: ../Microchip/Graphics/Primitive.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/1713430119 
+	@${RM} ${OBJECTDIR}/_ext/1713430119/Primitive.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1713430119/Primitive.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1713430119/Primitive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1713430119/Primitive.o.d" -o ${OBJECTDIR}/_ext/1713430119/Primitive.o ../Microchip/Graphics/Primitive.c   -legacy-libc
 	
-${OBJECTDIR}/_ext/121592547/HX8347.o: ../../Mikromedia/Microchip/Graphics/Drivers/HX8347.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/121592547 
-	@${RM} ${OBJECTDIR}/_ext/121592547/HX8347.o.d 
-	@${RM} ${OBJECTDIR}/_ext/121592547/HX8347.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/121592547/HX8347.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/121592547/HX8347.o.d" -o ${OBJECTDIR}/_ext/121592547/HX8347.o ../../Mikromedia/Microchip/Graphics/Drivers/HX8347.c   -legacy-libc
+${OBJECTDIR}/_ext/1575306571/HX8347.o: ../Microchip/Graphics/Drivers/HX8347.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/1575306571 
+	@${RM} ${OBJECTDIR}/_ext/1575306571/HX8347.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1575306571/HX8347.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1575306571/HX8347.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1575306571/HX8347.o.d" -o ${OBJECTDIR}/_ext/1575306571/HX8347.o ../Microchip/Graphics/Drivers/HX8347.c   -legacy-libc
 	
-${OBJECTDIR}/_ext/72748031/GOLFontDefault.o: ../../Mikromedia/Microchip/Graphics/GOLFontDefault.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/72748031 
-	@${RM} ${OBJECTDIR}/_ext/72748031/GOLFontDefault.o.d 
-	@${RM} ${OBJECTDIR}/_ext/72748031/GOLFontDefault.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/72748031/GOLFontDefault.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/72748031/GOLFontDefault.o.d" -o ${OBJECTDIR}/_ext/72748031/GOLFontDefault.o ../../Mikromedia/Microchip/Graphics/GOLFontDefault.c   -legacy-libc
+${OBJECTDIR}/_ext/1713430119/GOLFontDefault.o: ../Microchip/Graphics/GOLFontDefault.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/1713430119 
+	@${RM} ${OBJECTDIR}/_ext/1713430119/GOLFontDefault.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1713430119/GOLFontDefault.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1713430119/GOLFontDefault.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1713430119/GOLFontDefault.o.d" -o ${OBJECTDIR}/_ext/1713430119/GOLFontDefault.o ../Microchip/Graphics/GOLFontDefault.c   -legacy-libc
 	
-${OBJECTDIR}/_ext/121592547/IL9341.o: ../../Mikromedia/Microchip/Graphics/Drivers/IL9341.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/121592547 
-	@${RM} ${OBJECTDIR}/_ext/121592547/IL9341.o.d 
-	@${RM} ${OBJECTDIR}/_ext/121592547/IL9341.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/121592547/IL9341.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/121592547/IL9341.o.d" -o ${OBJECTDIR}/_ext/121592547/IL9341.o ../../Mikromedia/Microchip/Graphics/Drivers/IL9341.c   -legacy-libc
+${OBJECTDIR}/_ext/1575306571/IL9341.o: ../Microchip/Graphics/Drivers/IL9341.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/1575306571 
+	@${RM} ${OBJECTDIR}/_ext/1575306571/IL9341.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1575306571/IL9341.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1575306571/IL9341.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1575306571/IL9341.o.d" -o ${OBJECTDIR}/_ext/1575306571/IL9341.o ../Microchip/Graphics/Drivers/IL9341.c   -legacy-libc
 	
 ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/main.o.d 
 	@${RM} ${OBJECTDIR}/main.o 
-	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c   -legacy-libc
 	
 ${OBJECTDIR}/resources.o: resources.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/resources.o.d 
 	@${RM} ${OBJECTDIR}/resources.o 
-	@${FIXDEPS} "${OBJECTDIR}/resources.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/resources.o.d" -o ${OBJECTDIR}/resources.o resources.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/resources.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/resources.o.d" -o ${OBJECTDIR}/resources.o resources.c   -legacy-libc
 	
 else
-${OBJECTDIR}/_ext/1904715551/TimeDelay.o: ../../Mikromedia/Microchip/Common/TimeDelay.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1904715551 
-	@${RM} ${OBJECTDIR}/_ext/1904715551/TimeDelay.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1904715551/TimeDelay.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1904715551/TimeDelay.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1904715551/TimeDelay.o.d" -o ${OBJECTDIR}/_ext/1904715551/TimeDelay.o ../../Mikromedia/Microchip/Common/TimeDelay.c   -legacy-libc
+${OBJECTDIR}/_ext/221508487/TimeDelay.o: ../Microchip/Common/TimeDelay.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/221508487 
+	@${RM} ${OBJECTDIR}/_ext/221508487/TimeDelay.o.d 
+	@${RM} ${OBJECTDIR}/_ext/221508487/TimeDelay.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/221508487/TimeDelay.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/221508487/TimeDelay.o.d" -o ${OBJECTDIR}/_ext/221508487/TimeDelay.o ../Microchip/Common/TimeDelay.c   -legacy-libc
 	
-${OBJECTDIR}/_ext/72748031/Primitive.o: ../../Mikromedia/Microchip/Graphics/Primitive.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/72748031 
-	@${RM} ${OBJECTDIR}/_ext/72748031/Primitive.o.d 
-	@${RM} ${OBJECTDIR}/_ext/72748031/Primitive.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/72748031/Primitive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/72748031/Primitive.o.d" -o ${OBJECTDIR}/_ext/72748031/Primitive.o ../../Mikromedia/Microchip/Graphics/Primitive.c   -legacy-libc
+${OBJECTDIR}/_ext/1713430119/Primitive.o: ../Microchip/Graphics/Primitive.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/1713430119 
+	@${RM} ${OBJECTDIR}/_ext/1713430119/Primitive.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1713430119/Primitive.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1713430119/Primitive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1713430119/Primitive.o.d" -o ${OBJECTDIR}/_ext/1713430119/Primitive.o ../Microchip/Graphics/Primitive.c   -legacy-libc
 	
-${OBJECTDIR}/_ext/121592547/HX8347.o: ../../Mikromedia/Microchip/Graphics/Drivers/HX8347.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/121592547 
-	@${RM} ${OBJECTDIR}/_ext/121592547/HX8347.o.d 
-	@${RM} ${OBJECTDIR}/_ext/121592547/HX8347.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/121592547/HX8347.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/121592547/HX8347.o.d" -o ${OBJECTDIR}/_ext/121592547/HX8347.o ../../Mikromedia/Microchip/Graphics/Drivers/HX8347.c   -legacy-libc
+${OBJECTDIR}/_ext/1575306571/HX8347.o: ../Microchip/Graphics/Drivers/HX8347.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/1575306571 
+	@${RM} ${OBJECTDIR}/_ext/1575306571/HX8347.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1575306571/HX8347.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1575306571/HX8347.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1575306571/HX8347.o.d" -o ${OBJECTDIR}/_ext/1575306571/HX8347.o ../Microchip/Graphics/Drivers/HX8347.c   -legacy-libc
 	
-${OBJECTDIR}/_ext/72748031/GOLFontDefault.o: ../../Mikromedia/Microchip/Graphics/GOLFontDefault.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/72748031 
-	@${RM} ${OBJECTDIR}/_ext/72748031/GOLFontDefault.o.d 
-	@${RM} ${OBJECTDIR}/_ext/72748031/GOLFontDefault.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/72748031/GOLFontDefault.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/72748031/GOLFontDefault.o.d" -o ${OBJECTDIR}/_ext/72748031/GOLFontDefault.o ../../Mikromedia/Microchip/Graphics/GOLFontDefault.c   -legacy-libc
+${OBJECTDIR}/_ext/1713430119/GOLFontDefault.o: ../Microchip/Graphics/GOLFontDefault.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/1713430119 
+	@${RM} ${OBJECTDIR}/_ext/1713430119/GOLFontDefault.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1713430119/GOLFontDefault.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1713430119/GOLFontDefault.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1713430119/GOLFontDefault.o.d" -o ${OBJECTDIR}/_ext/1713430119/GOLFontDefault.o ../Microchip/Graphics/GOLFontDefault.c   -legacy-libc
 	
-${OBJECTDIR}/_ext/121592547/IL9341.o: ../../Mikromedia/Microchip/Graphics/Drivers/IL9341.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/121592547 
-	@${RM} ${OBJECTDIR}/_ext/121592547/IL9341.o.d 
-	@${RM} ${OBJECTDIR}/_ext/121592547/IL9341.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/121592547/IL9341.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/121592547/IL9341.o.d" -o ${OBJECTDIR}/_ext/121592547/IL9341.o ../../Mikromedia/Microchip/Graphics/Drivers/IL9341.c   -legacy-libc
+${OBJECTDIR}/_ext/1575306571/IL9341.o: ../Microchip/Graphics/Drivers/IL9341.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/1575306571 
+	@${RM} ${OBJECTDIR}/_ext/1575306571/IL9341.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1575306571/IL9341.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1575306571/IL9341.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1575306571/IL9341.o.d" -o ${OBJECTDIR}/_ext/1575306571/IL9341.o ../Microchip/Graphics/Drivers/IL9341.c   -legacy-libc
 	
 ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/main.o.d 
 	@${RM} ${OBJECTDIR}/main.o 
-	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c   -legacy-libc
 	
 ${OBJECTDIR}/resources.o: resources.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/resources.o.d 
 	@${RM} ${OBJECTDIR}/resources.o 
-	@${FIXDEPS} "${OBJECTDIR}/resources.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/resources.o.d" -o ${OBJECTDIR}/resources.o resources.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/resources.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -mno-float -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/resources.o.d" -o ${OBJECTDIR}/resources.o resources.c   -legacy-libc
 	
 endif
 

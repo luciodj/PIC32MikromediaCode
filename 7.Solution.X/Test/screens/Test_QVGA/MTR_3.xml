@@ -1,0 +1,29 @@
+<golproperties>
+<scheme>defscheme</scheme>
+<text> </text>
+<titlefont memory="Internal">Gentium_16</titlefont>
+<valuefont memory="Internal">Gentium_16</valuefont>
+<maxval>50</maxval>
+<minval>1</minval>
+<pos>1</pos>
+<state>
+<list>0</list>
+<list>enabled</list>
+<list>disabled</list>
+</state>
+<visible>
+<list>0</list>
+<list>true</list>
+<list>false</list>
+</visible>
+<metertype>
+<list>1</list>
+<list>normal</list>
+<list>ring</list>
+</metertype>
+<bottom>183</bottom>
+<right>319</right>
+<top>58</top>
+<left>182</left>
+<name>MTR_3</name>
+</golproperties>

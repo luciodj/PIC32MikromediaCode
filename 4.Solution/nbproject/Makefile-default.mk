@@ -95,122 +95,122 @@ ${OBJECTDIR}/_ext/1360937979/TouchScreen.o: ../uMB/TouchScreen.c  nbproject/Make
 	@${MKDIR} ${OBJECTDIR}/_ext/1360937979 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/TouchScreen.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/TouchScreen.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/TouchScreen.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/TouchScreen.o.d" -o ${OBJECTDIR}/_ext/1360937979/TouchScreen.o ../uMB/TouchScreen.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/TouchScreen.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/TouchScreen.o.d" -o ${OBJECTDIR}/_ext/1360937979/TouchScreen.o ../uMB/TouchScreen.c   -legacy-libc
 	
 ${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o: ../uMB/TouchScreenResistive.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1360937979 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o.d" -o ${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o ../uMB/TouchScreenResistive.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o.d" -o ${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o ../uMB/TouchScreenResistive.c   -legacy-libc
 	
 ${OBJECTDIR}/_ext/1360937979/LCDTerminal.o: ../uMB/LCDTerminal.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1360937979 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/LCDTerminal.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/LCDTerminal.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/LCDTerminal.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/LCDTerminal.o.d" -o ${OBJECTDIR}/_ext/1360937979/LCDTerminal.o ../uMB/LCDTerminal.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/LCDTerminal.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/LCDTerminal.o.d" -o ${OBJECTDIR}/_ext/1360937979/LCDTerminal.o ../uMB/LCDTerminal.c   -legacy-libc
 	
 ${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o: ../uMB/LCDTerminalFont.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1360937979 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o.d" -o ${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o ../uMB/LCDTerminalFont.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o.d" -o ${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o ../uMB/LCDTerminalFont.c   -legacy-libc
 	
 ${OBJECTDIR}/_ext/1360937979/uMedia.o: ../uMB/uMedia.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1360937979 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/uMedia.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/uMedia.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/uMedia.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/uMedia.o.d" -o ${OBJECTDIR}/_ext/1360937979/uMedia.o ../uMB/uMedia.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/uMedia.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/uMedia.o.d" -o ${OBJECTDIR}/_ext/1360937979/uMedia.o ../uMB/uMedia.c   -legacy-libc
 	
 ${OBJECTDIR}/_ext/221508487/TimeDelay.o: ../Microchip/Common/TimeDelay.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/221508487 
 	@${RM} ${OBJECTDIR}/_ext/221508487/TimeDelay.o.d 
 	@${RM} ${OBJECTDIR}/_ext/221508487/TimeDelay.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/221508487/TimeDelay.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/221508487/TimeDelay.o.d" -o ${OBJECTDIR}/_ext/221508487/TimeDelay.o ../Microchip/Common/TimeDelay.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/_ext/221508487/TimeDelay.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/221508487/TimeDelay.o.d" -o ${OBJECTDIR}/_ext/221508487/TimeDelay.o ../Microchip/Common/TimeDelay.c   -legacy-libc
 	
 ${OBJECTDIR}/_ext/1713430119/Primitive.o: ../Microchip/Graphics/Primitive.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1713430119 
 	@${RM} ${OBJECTDIR}/_ext/1713430119/Primitive.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1713430119/Primitive.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1713430119/Primitive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1713430119/Primitive.o.d" -o ${OBJECTDIR}/_ext/1713430119/Primitive.o ../Microchip/Graphics/Primitive.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1713430119/Primitive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1713430119/Primitive.o.d" -o ${OBJECTDIR}/_ext/1713430119/Primitive.o ../Microchip/Graphics/Primitive.c   -legacy-libc
 	
 ${OBJECTDIR}/_ext/1575306571/HX8347.o: ../Microchip/Graphics/Drivers/HX8347.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1575306571 
 	@${RM} ${OBJECTDIR}/_ext/1575306571/HX8347.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1575306571/HX8347.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1575306571/HX8347.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1575306571/HX8347.o.d" -o ${OBJECTDIR}/_ext/1575306571/HX8347.o ../Microchip/Graphics/Drivers/HX8347.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1575306571/HX8347.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1575306571/HX8347.o.d" -o ${OBJECTDIR}/_ext/1575306571/HX8347.o ../Microchip/Graphics/Drivers/HX8347.c   -legacy-libc
 	
 ${OBJECTDIR}/bitmaps.o: bitmaps.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/bitmaps.o.d 
 	@${RM} ${OBJECTDIR}/bitmaps.o 
-	@${FIXDEPS} "${OBJECTDIR}/bitmaps.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/bitmaps.o.d" -o ${OBJECTDIR}/bitmaps.o bitmaps.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/bitmaps.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/bitmaps.o.d" -o ${OBJECTDIR}/bitmaps.o bitmaps.c   -legacy-libc
 	
 ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/main.o.d 
 	@${RM} ${OBJECTDIR}/main.o 
-	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c   -legacy-libc
 	
 else
 ${OBJECTDIR}/_ext/1360937979/TouchScreen.o: ../uMB/TouchScreen.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1360937979 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/TouchScreen.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/TouchScreen.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/TouchScreen.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/TouchScreen.o.d" -o ${OBJECTDIR}/_ext/1360937979/TouchScreen.o ../uMB/TouchScreen.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/TouchScreen.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/TouchScreen.o.d" -o ${OBJECTDIR}/_ext/1360937979/TouchScreen.o ../uMB/TouchScreen.c   -legacy-libc
 	
 ${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o: ../uMB/TouchScreenResistive.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1360937979 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o.d" -o ${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o ../uMB/TouchScreenResistive.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o.d" -o ${OBJECTDIR}/_ext/1360937979/TouchScreenResistive.o ../uMB/TouchScreenResistive.c   -legacy-libc
 	
 ${OBJECTDIR}/_ext/1360937979/LCDTerminal.o: ../uMB/LCDTerminal.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1360937979 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/LCDTerminal.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/LCDTerminal.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/LCDTerminal.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/LCDTerminal.o.d" -o ${OBJECTDIR}/_ext/1360937979/LCDTerminal.o ../uMB/LCDTerminal.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/LCDTerminal.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/LCDTerminal.o.d" -o ${OBJECTDIR}/_ext/1360937979/LCDTerminal.o ../uMB/LCDTerminal.c   -legacy-libc
 	
 ${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o: ../uMB/LCDTerminalFont.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1360937979 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o.d" -o ${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o ../uMB/LCDTerminalFont.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o.d" -o ${OBJECTDIR}/_ext/1360937979/LCDTerminalFont.o ../uMB/LCDTerminalFont.c   -legacy-libc
 	
 ${OBJECTDIR}/_ext/1360937979/uMedia.o: ../uMB/uMedia.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1360937979 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/uMedia.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937979/uMedia.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/uMedia.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/uMedia.o.d" -o ${OBJECTDIR}/_ext/1360937979/uMedia.o ../uMB/uMedia.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937979/uMedia.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1360937979/uMedia.o.d" -o ${OBJECTDIR}/_ext/1360937979/uMedia.o ../uMB/uMedia.c   -legacy-libc
 	
 ${OBJECTDIR}/_ext/221508487/TimeDelay.o: ../Microchip/Common/TimeDelay.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/221508487 
 	@${RM} ${OBJECTDIR}/_ext/221508487/TimeDelay.o.d 
 	@${RM} ${OBJECTDIR}/_ext/221508487/TimeDelay.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/221508487/TimeDelay.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/221508487/TimeDelay.o.d" -o ${OBJECTDIR}/_ext/221508487/TimeDelay.o ../Microchip/Common/TimeDelay.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/_ext/221508487/TimeDelay.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/221508487/TimeDelay.o.d" -o ${OBJECTDIR}/_ext/221508487/TimeDelay.o ../Microchip/Common/TimeDelay.c   -legacy-libc
 	
 ${OBJECTDIR}/_ext/1713430119/Primitive.o: ../Microchip/Graphics/Primitive.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1713430119 
 	@${RM} ${OBJECTDIR}/_ext/1713430119/Primitive.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1713430119/Primitive.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1713430119/Primitive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1713430119/Primitive.o.d" -o ${OBJECTDIR}/_ext/1713430119/Primitive.o ../Microchip/Graphics/Primitive.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1713430119/Primitive.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1713430119/Primitive.o.d" -o ${OBJECTDIR}/_ext/1713430119/Primitive.o ../Microchip/Graphics/Primitive.c   -legacy-libc
 	
 ${OBJECTDIR}/_ext/1575306571/HX8347.o: ../Microchip/Graphics/Drivers/HX8347.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1575306571 
 	@${RM} ${OBJECTDIR}/_ext/1575306571/HX8347.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1575306571/HX8347.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1575306571/HX8347.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1575306571/HX8347.o.d" -o ${OBJECTDIR}/_ext/1575306571/HX8347.o ../Microchip/Graphics/Drivers/HX8347.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1575306571/HX8347.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/_ext/1575306571/HX8347.o.d" -o ${OBJECTDIR}/_ext/1575306571/HX8347.o ../Microchip/Graphics/Drivers/HX8347.c   -legacy-libc
 	
 ${OBJECTDIR}/bitmaps.o: bitmaps.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/bitmaps.o.d 
 	@${RM} ${OBJECTDIR}/bitmaps.o 
-	@${FIXDEPS} "${OBJECTDIR}/bitmaps.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/bitmaps.o.d" -o ${OBJECTDIR}/bitmaps.o bitmaps.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/bitmaps.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/bitmaps.o.d" -o ${OBJECTDIR}/bitmaps.o bitmaps.c   -legacy-libc
 	
 ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR} 
 	@${RM} ${OBJECTDIR}/main.o.d 
 	@${RM} ${OBJECTDIR}/main.o 
-	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c   -legacy-libc
+	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"." -I"../uMB" -I"../Microchip/Include" -mcci -MMD -MF "${OBJECTDIR}/main.o.d" -o ${OBJECTDIR}/main.o main.c   -legacy-libc
 	
 endif
 

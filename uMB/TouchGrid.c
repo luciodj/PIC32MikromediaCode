@@ -94,3 +94,9 @@ t_code TouchGrid( void)
     return r;
 
 } // TouchGrid
+
+
+void setGrid( int x, int y)
+{
+    Xside = x;  Yside = y;
+}

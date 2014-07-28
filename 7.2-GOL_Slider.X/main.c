@@ -29,7 +29,7 @@ int main( void)
     SldCreate(  1,                      // unique ID
                 20, 100, 300, 140,      // position and size
                 SLD_DRAW,               // state
-                230,                    // 0..range
+                95,                     // 0..range
                 10,                     // resolution step
                 230,                    // initial position (100%)
                 NULL                    // default style scheme
@@ -70,16 +70,8 @@ WORD GOLMsgCallback( WORD objMsg, OBJ_HEADER* pObj, GOL_MSG* pMsg)
     if( pObj->ID == 1)                  // intercept messages from the slider
     {
         // update the screen backlight
-        SetBacklight( 20+ SldGetPos( pObj));
+        SetBacklight( 5 + SldGetPos( pObj));  
     }
-
-#ifdef _SCREENCAPTURE
-    if ( pObj->ID == 2)
-    {
-        FSInit();
-        ScreenCapture( "7-Slider.scr");
-    }
-#endif
     
     return 1;
 } // GOL Msg Callback

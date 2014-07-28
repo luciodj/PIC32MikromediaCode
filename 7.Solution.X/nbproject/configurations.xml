@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="BoardSupportPackage"
+                     displayName="BoardSupportPackage"
+                     projectFiles="true">
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/TouchScreen.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/TouchScreenAR1020.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/TouchScreenResistive.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/Beep.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/SST25VF016.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/cpld.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/drv_spi.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/SST39LF400.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/SST39VF040.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/MCHP25LC256.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Common" displayName="Common" projectFiles="true">
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/TimeDelay.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/GenericTypeDefs.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Drivers" displayName="Drivers" projectFiles="true">
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/DisplayDriver.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/DisplayDriverInterface.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/gfxcolors.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/gfxpmp.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/gfxtcon.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/gfxepmp.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/HIT1270.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/HX8347.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/mchpGfxDrv.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/mchpGfxLCC.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/S1D13517.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/SH1101A_SSD1303.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/SSD1339.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/SSD1926.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/ST7529.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/UC1610.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/drvTFT001.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/drvTFT002.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Graphics" displayName="Graphics" projectFiles="true">
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/GOL.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/Graphics.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/Palette.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/Primitive.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/ScanCodes.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/Button.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/CheckBox.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/Meter.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/DigitalMeter.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/Chart.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/RadioButton.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/ListBox.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/GroupBox.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/EditBox.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/Window.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/Slider.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/StaticText.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/RoundDial.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/Picture.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/ProgressBar.h</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Include/Graphics/TextEntry.h</itemPath>
+      </logicalFolder>
+      <itemPath>HardwareProfile.h</itemPath>
+      <itemPath>GraphicsConfig.h</itemPath>
+      <itemPath>Main.h</itemPath>
+      <itemPath>Test/GDD_Screens.h</itemPath>
+      <itemPath>Test/GDD_Resource.h</itemPath>
+      <itemPath>Test/GDD_GraphicsConfig.h</itemPath>
+      <itemPath>FSconfig.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="BoardSupportPackage"
+                     displayName="BoardSupportPackage"
+                     projectFiles="true">
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/TouchScreen.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/TouchScreenAR1020.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/TouchScreenResistive.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/Beep.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/SST25VF016.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/cpld.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/drv_spi.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/SST39LF400.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/SST39VF040.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Board Support Package/MCHP25LC256.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Common" displayName="Common" projectFiles="true">
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Common/TimeDelay.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Drivers" displayName="Drivers" projectFiles="true">
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Drivers/gfxepmp.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Drivers/mchpGfxDrv.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Drivers/mchpGfxLCC.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Drivers/TCON_Custom.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Drivers/TCON_HX8238.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Drivers/TCON_HX8257.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Drivers/TCON_SSD1289.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Drivers/drvTFT001.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Drivers/drvTFT002.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Drivers/HIT1270.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Drivers/HX8347.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Drivers/S1D13517.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Drivers/SH1101A_SSD1303.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Drivers/SSD1339.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Drivers/SSD1926.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Drivers/ST7529.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Drivers/UC1610.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Graphics" displayName="Graphics" projectFiles="true">
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/GOL.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/GOLFontDefault.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/GOLSchemeDefault.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Palette.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Primitive.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Button.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/CheckBox.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Meter.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/DigitalMeter.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Chart.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/RadioButton.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/ListBox.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/GroupBox.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/EditBox.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Window.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Slider.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/StaticText.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/RoundDial.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/Picture.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/ProgressBar.c</itemPath>
+        <itemPath>../../../MAL/microchip_solutions_v2013-02-15/Microchip/Graphics/TextEntry.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="ScreenCapture" projectFiles="true">
+        <itemPath>../Microchip/MDD File System/FSIO.c</itemPath>
+        <itemPath>../Microchip/MDD File System/SD-SPI.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="uMB" projectFiles="true">
+        <itemPath>../uMB/ADXL345.c</itemPath>
+      </logicalFolder>
+      <itemPath>Main.c</itemPath>
+      <itemPath>Test/GDD_Screens.c</itemPath>
+      <itemPath>Test/GDD_Resource.c</itemPath>
+      <itemPath>Test/GDD_X_Event_Handler.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../Microchip/MDD File System</Elem>
+    <Elem>../uMB</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="default" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC24FJ256GB110</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>PICkit3PlatformTool</platformTool>
+        <languageToolchain>XC16</languageToolchain>
+        <languageToolchainVersion>1.11</languageToolchainVersion>
+        <platform>4</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <C30>
+        <property key="code-model" value="default"/>
+        <property key="const-model" value="default"/>
+        <property key="data-model" value="default"/>
+        <property key="enable-all-warnings" value="true"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="enable-large-arrays" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="enable-symbols" value="true"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="extra-include-directories"
+                  value=".;../Board Support Package;../Microchip/Include;../uMB;Test"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="keep-inline" value="false"/>
+        <property key="oXC16gcc-align-arr" value="false"/>
+        <property key="oXC16gcc-cnsts-mauxflash" value="false"/>
+        <property key="oXC16gcc-data-sects" value="false"/>
+        <property key="oXC16gcc-errata" value=""/>
+        <property key="oXC16gcc-fillupper" value=""/>
+        <property key="oXC16gcc-large-aggregate" value="false"/>
+        <property key="oXC16gcc-mauxflash" value="false"/>
+        <property key="oXC16gcc-mpa-lvl" value=""/>
+        <property key="oXC16gcc-name-text-sec" value=""/>
+        <property key="oXC16gcc-near-chars" value="false"/>
+        <property key="oXC16gcc-no-isr-warn" value="false"/>
+        <property key="oXC16gcc-sfr-warn" value="false"/>
+        <property key="oXC16gcc-smar-io-lvl" value="1"/>
+        <property key="oXC16gcc-smart-io-fmt" value=""/>
+        <property key="optimization-level" value="0"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="scalar-model" value="default"/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+      </C30>
+      <C30-AS>
+      </C30-AS>
+      <C30-LD>
+        <property key="additional-options-use-response-files" value="false"/>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="heap-size" value="1024"/>
+        <property key="input-libraries" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="oXC16ld-extra-opts" value=""/>
+        <property key="oXC16ld-fill-upper" value="0"/>
+        <property key="oXC16ld-force-link" value="false"/>
+        <property key="oXC16ld-no-smart-io" value="false"/>
+        <property key="oXC16ld-nostdlib" value="false"/>
+        <property key="oXC16ld-stackguard" value="16"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="stack-size" value="16"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="warn-section-align" value="false"/>
+      </C30-LD>
+      <C30Global>
+        <property key="fast-math" value="false"/>
+        <property key="generic-16-bit" value="false"/>
+        <property key="legacy-libc" value="false"/>
+        <property key="oXC16glb-macros" value=""/>
+        <property key="output-file-format" value="elf"/>
+        <property key="save-temps" value="false"/>
+      </C30Global>
+      <PICkit3PlatformTool>
+        <property key="ADC 1" value="true"/>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="CLOCK CONTROL" value="true"/>
+        <property key="COMPARATOR" value="true"/>
+        <property key="CRC" value="true"/>
+        <property key="Freeze All Other Peripherals" value="true"/>
+        <property key="I2C1" value="true"/>
+        <property key="I2C2" value="true"/>
+        <property key="I2C3" value="true"/>
+        <property key="INPUT CAPTURE 1" value="true"/>
+        <property key="INPUT CAPTURE 2" value="true"/>
+        <property key="INPUT CAPTURE 3" value="true"/>
+        <property key="INPUT CAPTURE 4" value="true"/>
+        <property key="INPUT CAPTURE 5" value="true"/>
+        <property key="INPUT CAPTURE 6" value="true"/>
+        <property key="INPUT CAPTURE 7" value="true"/>
+        <property key="INPUT CAPTURE 8" value="true"/>
+        <property key="INPUT CAPTURE 9" value="true"/>
+        <property key="OUTPUT COMPARE 1" value="true"/>
+        <property key="OUTPUT COMPARE 2" value="true"/>
+        <property key="OUTPUT COMPARE 3" value="true"/>
+        <property key="OUTPUT COMPARE 4" value="true"/>
+        <property key="OUTPUT COMPARE 5" value="true"/>
+        <property key="OUTPUT COMPARE 6" value="true"/>
+        <property key="OUTPUT COMPARE 7" value="true"/>
+        <property key="OUTPUT COMPARE 8" value="true"/>
+        <property key="OUTPUT COMPARE 9" value="true"/>
+        <property key="PARALLEL MASTER/SLAVE PORT" value="true"/>
+        <property key="SPI 1" value="true"/>
+        <property key="SPI 2" value="true"/>
+        <property key="SPI 3" value="true"/>
+        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
+        <property key="TIMER1" value="true"/>
+        <property key="TIMER2" value="true"/>
+        <property key="TIMER3" value="true"/>
+        <property key="TIMER4" value="true"/>
+        <property key="TIMER5" value="true"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
+        <property key="UART 1" value="true"/>
+        <property key="UART 2" value="true"/>
+        <property key="UART 3" value="true"/>
+        <property key="UART 4" value="true"/>
+        <property key="UCNFG1" value="true"/>
+        <property key="hwtoolclock.frcindebug" value="false"/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="false"/>
+        <property key="memories.configurationmemory" value="false"/>
+        <property key="memories.eeprom" value="false"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="false"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.end" value="0x2abf7"/>
+        <property key="memories.programmemory.start" value="0x0"/>
+        <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmertogo.imagename" value=""/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.pgmspeed" value="2"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveprogramrange.end" value="0x2abf7"/>
+        <property key="programoptions.preserveprogramrange.start" value="0x0"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.testmodeentrymethod" value="VPPFirst"/>
+        <property key="programoptions.usehighvoltageonmclr" value="false"/>
+        <property key="programoptions.uselvpprogramming" value="false"/>
+        <property key="voltagevalue" value="3.25"/>
+      </PICkit3PlatformTool>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -1,5 +1,5 @@
 /*****************************************************************************
- * FileName:        3.h
+ * FileName:        resources.h
  * Processor:       PIC32MX
  * Compiler:        MPLAB C32/XC32 (see release notes for tested revision)
  * Linker:          MPLAB LINK32/XC32
@@ -17,7 +17,7 @@
  * You should refer to the license agreement accompanying this Software
  * for additional information regarding your rights and obligations.
  *
- * SOFTWARE AND DOCUMENTATION ARE PROVIDED ?AS IS? WITHOUT WARRANTY OF ANY
+ * SOFTWARE AND DOCUMENTATION ARE PROVIDED “AS IS” WITHOUT WARRANTY OF ANY
  * KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, ANY WARRANTY
  * OF MERCHANTABILITY, TITLE, NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR
  * PURPOSE. IN NO EVENT SHALL MICROCHIP OR ITS LICENSORS BE LIABLE OR
@@ -34,8 +34,8 @@
  * AUTO-GENERATED CODE:  Graphics Resource Converter version: 3.29.06
  *****************************************************************************/
 
-#ifndef RES_H_FILE
-#define RES_H_FILE
+#ifndef RESOURCES_H_FILE
+#define RESOURCES_H_FILE
 /*****************************************************************************
  * SECTION:  Includes
  *****************************************************************************/

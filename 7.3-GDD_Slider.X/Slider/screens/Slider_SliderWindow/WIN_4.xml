@@ -1,0 +1,16 @@
+<golproperties>
+<scheme>Window</scheme>
+<text>Backlight Slider</text>
+<bitmap memory="Internal">null</bitmap>
+<state>
+<list>0</list>
+<list>enabled</list>
+<list>disabled</list>
+</state>
+<visible>
+<list>0</list>
+<list>true</list>
+<list>false</list>
+</visible>
+<name>WIN_4</name>
+</golproperties>

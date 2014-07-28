@@ -1,0 +1,16 @@
+<golproperties>
+<scheme>Meter</scheme>
+<text>Accelerometer Test</text>
+<bitmap memory="Internal">NULL</bitmap>
+<state>
+<list>0</list>
+<list>enabled</list>
+<list>disabled</list>
+</state>
+<visible>
+<list>0</list>
+<list>true</list>
+<list>false</list>
+</visible>
+<name>WIN_8</name>
+</golproperties>

@@ -1,0 +1,14 @@
+<golproperties bgcolor="-1">
+<WIN_8>
+<path>screens/Test_QVGA/WIN_8.xml</path>
+</WIN_8>
+<MTR_Z>
+<path>screens/Test_QVGA/MTR_Z.xml</path>
+</MTR_Z>
+<PRB_X>
+<path>screens/Test_QVGA/PRB_X.xml</path>
+</PRB_X>
+<PRB_Y>
+<path>screens/Test_QVGA/PRB_Y.xml</path>
+</PRB_Y>
+</golproperties>

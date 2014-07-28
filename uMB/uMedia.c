@@ -4,13 +4,8 @@
  * PIC32 Mikromedia
  */
 
-#include "uMedia.h"
 #include <plib.h>
-
-#include "m25p80.h"
-#include "Touchscreen.h"
-#include "Graphics/Graphics.h"
-#include "MDD File System/FSIO.h"
+#include "uMedia.h"
 
 #define _TIMER3_ISR  __attribute__(( vector(_TIMER_3_VECTOR), interrupt(ipl1), nomips16))
 #define TICK_PERIOD     1       // Tick period in ms
@@ -20,7 +15,7 @@
 
 // local variables used by the backlight PWM
 unsigned PWM_count = 0;
-unsigned PWM_duty = PWM_period;
+unsigned PWM_duty = PWM_period; // init to 100% brightness
 
 void _TIMER3_ISR _T3Interrupt( void)
 {
@@ -46,9 +41,14 @@ void _TIMER3_ISR _T3Interrupt( void)
         }
     }
 #endif
+
+#ifdef  _SOUND
+    SoundCallback();
+#endif
+
 } // T3 ISR
 
-
+#if defined(  _TOUCH) || defined ( _SOUND)
 void TickInit( unsigned ms)
 {
     // Initialize Timer3
@@ -56,12 +56,11 @@ void TickInit( unsigned ms)
     PR3 = (GetPeripheralClock() * ms) / 8000;
     T3CONbits.TCKPS = 1;        // Set prescale to 1:8
     IFS0bits.T3IF = 0;          // Clear flag
-#ifdef __XC32__
     IPC3bits.T3IP = 1;          // SetPriorityIntT3( 1);
-#endif
     IEC0bits.T3IE = 1;          // Enable interrupt
     T3CONbits.TON = 1;          // Run timer
 }
+#endif
 
 
 void uMBInit( void)
@@ -91,7 +90,7 @@ void uMBInit( void)
     FlashInit( &spi_config);
 #endif
 
-#ifdef  _TOUCH
+#if defined(  _TOUCH) || defined ( _SOUND)
     TickInit( TICK_PERIOD);
 #endif
 } // uMBInit
@@ -100,12 +99,12 @@ void uMBInit( void)
 /**
  *  set the duty cycle of the sw PWM used by the Backlight 
  * 
- * @param byte  0..255 (0-100%) light intensity
+ * @param byte  0..100 (0-100%) light intensity
  * 
  */void  SetBacklight( unsigned char dim)
 {
-   // duty = (dim+1) * period / 256
-   PWM_duty = ( ( ((unsigned short) dim)+1) * PWM_period ) >> 8;
+   // duty = (dim+1) * period / 100
+   PWM_duty = ( ( ((unsigned short) dim)+1) * PWM_period ) /100;
 } // Set Backlight
 
 

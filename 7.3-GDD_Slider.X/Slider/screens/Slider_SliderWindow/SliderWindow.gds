@@ -1,0 +1,11 @@
+<golproperties bgcolor="-1">
+<WIN_1>
+<path>screens/Slider_SliderWindow/WIN_1.xml</path>
+</WIN_1>
+<SLD_2>
+<path>screens/Slider_SliderWindow/SLD_2.xml</path>
+</SLD_2>
+<DMT_3>
+<path>screens/Slider_SliderWindow/DMT_3.xml</path>
+</DMT_3>
+</golproperties>

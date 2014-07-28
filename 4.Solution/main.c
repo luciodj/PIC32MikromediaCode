@@ -2,7 +2,7 @@
  * Project: 4-15Tiles
  * File:    main.c
  *
- * Requires: MAL 1302
+ * Requires: MAL 1306
  */
 #include "PICconfig.h"
 #include "LCDTerminal.h"
@@ -17,33 +17,6 @@ const void * images[] = {
     &IMG0_2, &IMG1_2, &IMG2_2, &IMG3_2,
     &IMG0_3, &IMG1_3, &IMG2_3, &IMG3_3
 };
-
-
-//#ifdef __XC32__
-//#define _TIMER3_ISR  __attribute__(( vector(_TIMER_3_VECTOR), interrupt(ipl1), nomips16))
-//#else
-//#define _TIMER3_ISR  __attribute__((interrupt, shadow, auto_psv))
-//#endif
-//
-//void _TIMER3_ISR _T3Interrupt( void)
-//{
-//    IFS0bits.T3IF = 0;          // Clear flag
-//    TouchDetectPosition();
-//}
-//
-//#define TICK_PERIOD( ms)  (GetPeripheralClock() * (ms)) / 8000
-//
-//void TickInit( unsigned period_ms)
-//{
-//    // Initialize Timer3
-//    TMR3 = 0;
-//    PR3 = TICK_PERIOD( period_ms);
-//    T3CONbits.TCKPS = 1;        // Set prescale to 1:8
-//    IFS0bits.T3IF = 0;          // Clear flag
-//    IPC3bits.T3IP = 1;          // SetPriorityIntT3( 1);
-//    IEC0bits.T3IE = 1;          // Enable interrupt
-//    T3CONbits.TON = 1;          // Run timer
-//}
 
 
 int TouchGet( void)

@@ -1,0 +1,48 @@
+<golproperties>
+<scheme>Meter</scheme>
+<text>Button</text>
+<bitmap memory="Internal">NULL</bitmap>
+<toggle>
+<list>0</list>
+<list>off</list>
+<list>on</list>
+</toggle>
+<state1>
+<list>0</list>
+<list>released</list>
+<list>pressed</list>
+</state1>
+<type>
+<list>0</list>
+<list>normal</list>
+<list>two-tone</list>
+</type>
+<state>
+<list>0</list>
+<list>enabled</list>
+<list>disabled</list>
+</state>
+<visible>
+<list>0</list>
+<list>true</list>
+<list>false</list>
+</visible>
+<align>
+<list>0</list>
+<list>center</list>
+<list>left</list>
+<list>right</list>
+<list>top</list>
+<list>bottom</list>
+<list>left top</list>
+<list>left bottom</list>
+<list>right top</list>
+<list>right bottom</list>
+</align>
+<radius>0</radius>
+<bottom>227</bottom>
+<right>199</right>
+<top>195</top>
+<left>113</left>
+<name>BTN_4</name>
+</golproperties>

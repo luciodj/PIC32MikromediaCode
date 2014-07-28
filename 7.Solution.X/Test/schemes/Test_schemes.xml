@@ -1,0 +1,8 @@
+<schemes>
+<defscheme>
+<path>schemes/Test_defscheme.xml</path>
+</defscheme>
+<Meter>
+<path>schemes/Test_Meter.xml</path>
+</Meter>
+</schemes>

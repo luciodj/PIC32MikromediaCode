@@ -1,0 +1,27 @@
+<golproperties golId="17" golType="DMT">
+<scheme>Light</scheme>
+<dotpos>0</dotpos>
+<noofdigits>3</noofdigits>
+<value>255</value>
+<state>
+<list>0</list>
+<list>enabled</list>
+<list>disabled</list>
+</state>
+<visible>
+<list>0</list>
+<list>true</list>
+<list>false</list>
+</visible>
+<align>
+<list>0</list>
+<list>center</list>
+<list>right</list>
+<list>left</list>
+</align>
+<bottom>151</bottom>
+<right>219</right>
+<top>99</top>
+<left>99</left>
+<name>DMT_3</name>
+</golproperties>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Graphics_Resource_Converter>
+<Fonts>
+<Font_Resource>
+<label>Monospaced_12</label>
+<memorytype>Internal</memorytype>
+<name>Monospaced</name>
+<size>12</size>
+<height>12</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>127</last_character>
+<font_filter>None</font_filter>
+</Font_Resource>
+<Font_Resource>
+<label>Monospaced_10</label>
+<memorytype>Internal</memorytype>
+<name>Monospaced</name>
+<size>10</size>
+<height>11</height>
+<anti_aliasing>2 bits per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>127</last_character>
+<font_filter>None</font_filter>
+</Font_Resource>
+<Font_Resource>
+<label>Monospaced_11</label>
+<memorytype>Internal</memorytype>
+<name>Monospaced</name>
+<size>11</size>
+<height>12</height>
+<anti_aliasing>2 bits per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>127</last_character>
+<font_filter>None</font_filter>
+</Font_Resource>
+<Font_Resource>
+<label>Calibri_11</label>
+<memorytype>Internal</memorytype>
+<name>Calibri</name>
+<size>11</size>
+<height>14</height>
+<anti_aliasing>2 bits per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>127</last_character>
+<font_filter>None</font_filter>
+</Font_Resource>
+</Fonts>
+<Font_Files>
+<Font_File_Resource>
+<label>Gentium_16</label>
+<memorytype>Internal</memorytype>
+<path>Gentium_16.ttf</path>
+<name>Gentium</name>
+<size>16</size>
+<height>19</height>
+<anti_aliasing>1 bit per pixel</anti_aliasing>
+<first_character>32</first_character>
+<last_character>126</last_character>
+<font_filter>None</font_filter>
+</Font_File_Resource>
+</Font_Files>
+</Graphics_Resource_Converter>

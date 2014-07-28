@@ -10,8 +10,6 @@
 #define uMPIC32    432
 
 #include <xc.h>
-//#include <adc.h>
-
 
 /*********************************************************************
  * PIC24 clock 
@@ -49,9 +47,9 @@
 // interface
 #define USE_GFX_PMP
 #define USE_16BIT_PMP
-#define PMP_DATA_SETUP_TIME             (10)
-#define PMP_DATA_WAIT_TIME              (10)
-#define PMP_DATA_HOLD_TIME              (10)
+#define PMP_DATA_SETUP_TIME             (0)
+#define PMP_DATA_WAIT_TIME              (0)
+#define PMP_DATA_HOLD_TIME              (0)
 
 /*********************************************************************
  * Image orientation (can be 0, 90, 180, 270 degrees).
@@ -156,7 +154,7 @@
 #define SST25_CS_LAT    _LATC2
 
 #define ERASE_SECTOR_SIZE   65536
-#define SPI_FLASH_CONFIG    { 2, 3, 6, 0, 1, 1, 0}
+#define SPI_FLASH_CONFIG    { 2, 3, 6, 0, 1, 0, 0}
 
 /*********************************************************************
  * IOs for the micro SD card interface
@@ -210,11 +208,11 @@
     #define SPIOUT              TRISGbits.TRISG8
 
 
-    #define SPI_START_CFG_1     (PRI_PRESCAL_64_1 | SEC_PRESCAL_8_1 | MASTER_ENABLE_ON | SPI_CKE_ON | SPI_SMP_ON)
+    #define SPI_START_CFG_1     (MASTER_ENABLE_ON | CLK_POL_ACTIVE_LOW | SPI_SMP_OFF)
     #define SPI_START_CFG_2     (SPI_ENABLE)
 
     // Define the SPI frequency
-    #define SPI_FREQUENCY	(20000000)
+    #define SPI_FREQUENCY	(10000000)
 
     //SPI library functions
     #define putcSPI             putcSPI2
@@ -246,9 +244,9 @@
 #define MP3_CS_Enable()         _LATG15 = 0
 #define MP3_CS_Disable()        _LATG15 = 1
 
-#define MP3_START_CFG_1     (PRI_PRESCAL_64_1 | SEC_PRESCAL_8_1 | MASTER_ENABLE_ON | SPI_CKE_ON | SPI_SMP_ON)
+#define MP3_START_CFG_1     (MASTER_ENABLE_ON | CLK_POL_ACTIVE_LOW | SPI_SMP_OFF)
 #define MP3_START_CFG_2     (SPI_ENABLE)
-#define MP3_FAST_CFG_1      (PRI_PRESCAL_1_1  | SEC_PRESCAL_8_1 | MASTER_ENABLE_ON | SPI_CKE_ON | SPI_SMP_ON)
+#define MP3_FAST_CFG_1      (MASTER_ENABLE_ON | CLK_POL_ACTIVE_LOW | SPI_SMP_OFF)
 
 /*********************************************************************
  * USB configuration: self powered

@@ -1,0 +1,29 @@
+<golproperties>
+<scheme>Meter</scheme>
+<text>Z</text>
+<titlefont memory="Internal">Gentium_16</titlefont>
+<valuefont memory="Internal">Gentium_16</valuefont>
+<maxval>255</maxval>
+<minval>0</minval>
+<pos>1</pos>
+<state>
+<list>0</list>
+<list>enabled</list>
+<list>disabled</list>
+</state>
+<visible>
+<list>0</list>
+<list>true</list>
+<list>false</list>
+</visible>
+<metertype>
+<list>0</list>
+<list>normal</list>
+<list>ring</list>
+</metertype>
+<bottom>195</bottom>
+<right>235</right>
+<top>44</top>
+<left>52</left>
+<name>MTR_Z</name>
+</golproperties>

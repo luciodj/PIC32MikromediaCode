@@ -7,6 +7,7 @@
       <itemPath>../uMB/vs1053.h</itemPath>
       <itemPath>../uMB/HardwareProfile.h</itemPath>
       <itemPath>GraphicsConfig.h</itemPath>
+      <itemPath>uMBconfig.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -51,8 +52,11 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
+        <archiverTool>
+        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
@@ -88,6 +92,8 @@
         <property key="use-iar" value="false"/>
         <property key="use-indirect-calls" value="false"/>
       </C32>
+      <C32-AR>
+      </C32-AR>
       <C32-AS>
       </C32-AS>
       <C32-LD>

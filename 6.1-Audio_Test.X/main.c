@@ -24,9 +24,8 @@ void MP3Init( WORD mode)
     MP3_CS_Config();        // make xCs output
     MP3_DCS_Config();       // make xDCs output
 
-    //MP3_SPICON1 = 0x007C;   // cke=0 and ckp=1, master 8-bit, pre 1:64
-    //MP3_SPIENABLE = 1;      // on
     OpenSPI( MP3_START_CFG_1, MP3_START_CFG_2);
+    SPIBRG = GetPeripheralClock()/200000;
 
     DelayMs( 10);           // give time to reset
     MP3_RST_Disable();      // release reset
@@ -42,18 +41,15 @@ void MP3Init( WORD mode)
     // double the codec clock frequency
     writeMP3Register( MP3_REG_CLOCKF, 0x2000);
 
-    // can change to full speed now
-    //MP3_SPICON1 = 0x007E;
+    // can change to full speed now (<12MHz)
     OpenSPI( MP3_FAST_CFG_1, MP3_START_CFG_2);
+    SPIBRG = GetPeripheralClock()/SPI_FREQUENCY;
 
 } // MP3Init
 
 
 WORD  writeMP3( BYTE b)
 {
-//    MP3_SPIBUF=b;           // move byte into buffer
-//    while(!MP3_SPIRBF);     // wait for transmission completion
-//    return MP3_SPIBUF;      // return buffer content
     putcSPI( b);
     return getcSPI();
 }

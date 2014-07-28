@@ -1,0 +1,14 @@
+<schemes>
+<defscheme>
+<path>schemes/Slider_defscheme.xml</path>
+</defscheme>
+<enter_new_scheme>
+<path>schemes/Slider_enter_new_scheme.xml</path>
+</enter_new_scheme>
+<Light>
+<path>schemes/Slider_Light.xml</path>
+</Light>
+<Window>
+<path>schemes/Slider_Window.xml</path>
+</Window>
+</schemes>

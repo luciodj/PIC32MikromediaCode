@@ -7,6 +7,7 @@
       <itemPath>../Microchip/Include/Graphics/GOL.h</itemPath>
       <itemPath>../uMB/HardwareProfile.h</itemPath>
       <itemPath>GraphicsConfig.h</itemPath>
+      <itemPath>uMBconfig.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -22,10 +23,6 @@
         <itemPath>../uMB/TouchScreenResistive.c</itemPath>
         <itemPath>../uMB/uMedia.c</itemPath>
       </logicalFolder>
-      <logicalFolder name="f3" displayName="Capture" projectFiles="true">
-        <itemPath>../Microchip/MDD File System/FSIO.c</itemPath>
-        <itemPath>../Microchip/MDD File System/SD-SPI.c</itemPath>
-      </logicalFolder>
       <logicalFolder name="f2" displayName="MLA" projectFiles="true">
         <itemPath>../Microchip/Graphics/GOL.c</itemPath>
         <itemPath>../Microchip/Graphics/GOLFontDefault.c</itemPath>
@@ -35,6 +32,7 @@
         <itemPath>../Microchip/Graphics/GOLSchemeDefault.c</itemPath>
         <itemPath>../Microchip/Graphics/Slider.c</itemPath>
         <itemPath>../Microchip/Graphics/Window.c</itemPath>
+        <itemPath>../uMB/IL9341.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
     </logicalFolder>
@@ -52,6 +50,7 @@
     <Elem>../Microchip/MDD File System</Elem>
     <Elem>../Microchip/Graphics</Elem>
     <Elem>../7-GOL_Simple.X</Elem>
+    <Elem>../6.3-Audio_Play.X</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -71,8 +70,11 @@
           <linkerLibItems>
           </linkerLibItems>
         </linkerTool>
+        <archiverTool>
+        </archiverTool>
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
       </compileType>
@@ -108,6 +110,8 @@
         <property key="use-iar" value="false"/>
         <property key="use-indirect-calls" value="false"/>
       </C32>
+      <C32-AR>
+      </C32-AR>
       <C32-AS>
       </C32-AS>
       <C32-LD>
@@ -208,6 +212,7 @@
         <property key="UART1" value="true"/>
         <property key="UART2" value="true"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="firmware.download.all" value="false"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="false"/>

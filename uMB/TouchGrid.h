@@ -51,4 +51,10 @@ t_code TouchGet( void);
 t_code TouchGrid( void);
 
 
+/**
+ * @brief   set the horizontal and vertical dimensions of the touch grid
+ *
+ */
+void setGrid( int x, int y);
+
 #endif

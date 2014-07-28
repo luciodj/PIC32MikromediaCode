@@ -1,0 +1,5 @@
+<golproperties cdepth="16" hres="239" paletteenabled="0" version="1.01" vres="319">
+<SliderWindow>
+<path>screens/Slider_SliderWindow/SliderWindow.gds</path>
+</SliderWindow>
+</golproperties>

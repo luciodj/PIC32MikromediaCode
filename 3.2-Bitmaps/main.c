@@ -7,10 +7,8 @@
 
 #include "PICconfig.h"
 #include "Graphics/Graphics.h"
-#include "Graphics/GOL.h"
 
 #include "resources.h"
-#include "uMedia.h"
 
 int main( void )
 {
@@ -34,12 +32,6 @@ int main( void )
 
     // 4. display  fingerprint bitmap
     PutImage( 130, 60, (void*) &flower, IMAGE_NORMAL);
-
-//    // capture screen
-//    uMBInit();
-//    FSInit();
-//    ScreenCapture( "3-COLOR.SCR");
-
 
     // main loop
     while( 1)
