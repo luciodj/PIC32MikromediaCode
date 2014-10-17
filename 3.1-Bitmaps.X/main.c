@@ -2,10 +2,9 @@
  * File:   main.c
  * 
  * Chapter 3: Graphic Resources - Splashscreen demo
- * 
+ *
+ * Requires: MLA 1306
  */
-
-#include "xc.h"
 #include "PICconfig.h"
 #include "Graphics/Graphics.h"
 

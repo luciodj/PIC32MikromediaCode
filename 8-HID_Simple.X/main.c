@@ -2,7 +2,7 @@
  Project:       8-HID_Simple
  FileName:      main.c
  Hardware:      PIC24 Mikromedia
- Requires:      MLA 13-06
+ Requires:      MLA 1306
  ********************************************************************/
 
 #include <xc.h>
@@ -144,8 +144,15 @@ void DisplayUSBStatus(void)
 
 void InitializeSystem( void)
 {
+    DRV_SPI_INIT_DATA si = SPI_FLASH_CONFIG;
+
     //Init I/Os
     uMBInit();                  // SPI pps, disable analog inputs
+
+    // intialize the Serial Flash
+    SST25_CS_LAT = 1;
+    SST25_CS_TRIS = 0;
+    FlashInit( &si);
 
     // init display
     LCDInit();
@@ -189,7 +196,7 @@ int main(void)
 // ************** USB Callback Functions ***********************************
 void USBCBSuspend(void)
 {
-    //USBSleepOnSuspend();
+//    USBSleepOnSuspend();
 }
 
 void USBCBWakeFromSuspend(void)

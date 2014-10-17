@@ -9,9 +9,8 @@
 #include "Graphics/Graphics.h"
 
 
-
 /**
- * @func  CenteredText
+ * Center Text
  *
  * @param y             vertical coordinate
  * @param color         color used for text

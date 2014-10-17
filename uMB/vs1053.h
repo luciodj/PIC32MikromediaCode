@@ -4,7 +4,7 @@
  *
  * Created on January 17, 2013
  *
- * Requires: MAL 2012-10 or later
+ * Requires: MLA 2012-10 or later
  */
 
 #ifndef _VS1053
@@ -52,7 +52,7 @@
 
 // prototypes
 WORD writeMP3( BYTE b);
-void writeMP3Register(BYTE reg, unsigned w);
+void writeMP3Register(BYTE reg, WORD w);
 WORD readMP3Register( BYTE reg);
 
 void MP3Init( WORD mode);

@@ -12,7 +12,7 @@
 #include <xc.h>
 
 /*********************************************************************
- * PIC24 clock 
+ * System clock
  ********************************************************************/
 #define GetSystemClock()            (80000000ull)
 #define GetInstructionClock()       GetSystemClock()

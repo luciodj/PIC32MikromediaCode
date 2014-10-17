@@ -1,8 +1,7 @@
 /*
  * File:   TouchGrid.c
  *
- *
- * Requires: MAL 1306, LCDTerminal.c, TouchScreen.c
+ * Requires: MLA 1306, LCDTerminal.c, TouchScreen.c
  */
 
 #include "HardwareProfile.h"
@@ -11,13 +10,18 @@
 #include "M25P80.h"
 
 
-static int Xside, Yside;
+static int Xside=1, Yside=1;
+
+void setGrid( int x, int y)
+{
+    Xside = (GetMaxX()+1)/x;  Yside = (GetMaxY()+1)/y;
+}
+
 
 void TouchGridInit( int x, int y)
 {
     // define the grid dimensions
-    Xside = x;
-    Yside = y;
+    setGrid( x, y);
 
     // init the touch timer 
     TickInit( 1);
@@ -30,10 +34,10 @@ void TouchGridInit( int x, int y)
 } // Touch Grid Init
 
 
-t_code TouchGet( void)
-{   // returns 10..1F if screen pressed, 0 = none
+code_t TouchGet( void)
+{  
     int x, y;
-    t_code r;
+    code_t r;
 
     r.valid = 0;
 
@@ -45,21 +49,19 @@ t_code TouchGet( void)
         return r;       // return if no valid code found
 
     // 3. identify point on grid (4x4)
-    r.y  = y / ( Yside); r.x =  x / ( Xside) ;
+    r.y = y / ( Yside); r.x = x / ( Xside) ;
     r.valid = 1;
     r.option = 0;
-
     return r;
-
 } // TouchGet
 
 
-t_code TouchGrid( void)
+code_t TouchGrid( void)
 {   // wait for a key pressed and debounce
     int released = 0;           // released counter
     int pressed = 0;            // pressed counter
-    t_code code;                // grid code
-    t_code r;                   // return value
+    code_t code;                // grid code
+    code_t r;                   // return value
 
     // 1. wait for a key pressed for at least 10 loops
     while ( pressed < 10)
@@ -94,9 +96,3 @@ t_code TouchGrid( void)
     return r;
 
 } // TouchGrid
-
-
-void setGrid( int x, int y)
-{
-    Xside = x;  Yside = y;
-}

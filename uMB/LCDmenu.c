@@ -1,7 +1,7 @@
 /*
  * File:   LCDmenu.c
  *
- * Requires: MAL 1306, LCDTerminal.c, TouchGrid.c
+ * Requires: MLA 1306, LCDTerminal.c, TouchGrid.c
  */
 
 #include "LCDmenu.h"
@@ -10,7 +10,7 @@
 int Menu( char list[][16], int items)
 {
     int i, j, n;
-    t_code c;
+    code_t c;
 
     // init cursor position, first item selected
     n = 0;
@@ -42,6 +42,17 @@ int Menu( char list[][16], int items)
             for(j=0;j<(14-strlen( list[i])); j++)
                 LCDPut(' ');
         } // for
+
+        // draw touch 'hints'
+        int mx = ( GetMaxX()+1)/2;
+        int w = 40;
+        int h = 20;
+        SetColor( LIGHTGRAY);
+        Line( mx-w, h, mx, 2); LineTo( mx+w, h);    // up arrow
+        Line( mx-w, GetMaxY()-h, mx, GetMaxY()-2); LineTo( mx+w, GetMaxY()-h);    // down arrow
+        int my = ( GetMaxY()+1)/2;
+        w = 20; h = 40;
+        Line( GetMaxX()-w, my-h, GetMaxX()-2, my); LineTo( GetMaxX()-w, my+h);   // right arrow
 
         // restore default colors
         LCDSetBackground( LCD_BACK);

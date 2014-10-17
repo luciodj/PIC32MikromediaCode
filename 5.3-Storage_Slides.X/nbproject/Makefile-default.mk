@@ -72,6 +72,9 @@ LDLIBSOPTIONS=
 FIXDEPS=fixDeps
 
 .build-conf:  ${BUILD_SUBPROJECTS}
+ifneq ($(INFORMATION_MESSAGE), )
+	@echo $(INFORMATION_MESSAGE)
+endif
 	${MAKE}  -f nbproject/Makefile-default.mk dist/${CND_CONF}/${IMAGE_TYPE}/5.3-Storage_Slides.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 
 MP_PROCESSOR_OPTION=32MX460F512L

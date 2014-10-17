@@ -4,7 +4,7 @@
  *
  * Desc:    Basic example of use of the MDD File System library
  *
- * Requires: MAL 1306
+ * Requires: MLA 1306
  */
 
 #include "PICconfig.h"
@@ -13,10 +13,10 @@
 #include "TimeDelay.h"
 #include "LCDTerminal.h"
 #include "TouchGrid.h"
+
 #include "MDD File System/FSIO.h"
 
-
-char data[ 400];        // a buffer of arbitrary length
+char data[ 400];                // a buffer of arbitrary length
 
 int main( void )
 {
@@ -24,13 +24,11 @@ int main( void )
     unsigned length;
     char *p;
 
-
     // 2. initializations
-    uMBInit();                                // init pins and ports
-    LCDInit();                                // inits terminal emulation
+    uMBInit();                  // init pins and ports
+    LCDInit();                  // inits terminal emulation
     DisplayBacklightOn();
-    TouchGridInit( GetMaxX()/3, GetMaxY()/3); // defines a 3x3 grid
-
+    TouchGridInit( 3, 3);       // defines a 3x3 grid
 
     // 3. splash screen
     LCDClear();
@@ -38,7 +36,6 @@ int main( void )
     LCDCenterString( +1,  "tap to start");
     TouchGrid();
     LCDClear();
-
 
     // Main Loop
     while( 1 )
@@ -53,7 +50,7 @@ int main( void )
         }
 
         // 5. try to open a file
-        if ( (fp = FSfopen( "README.txt", "r")) == NULL)
+        if ( (fp = FSfopen( "README.TXT", "r")) == NULL)
         {
             LCDPutString( "\n File Not Found");
         }

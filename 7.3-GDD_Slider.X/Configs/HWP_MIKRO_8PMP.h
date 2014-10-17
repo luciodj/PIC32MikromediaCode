@@ -130,7 +130,9 @@
 //Auto Generated Code
 #define MIKRO_BOARD
 #define USE_8BIT_PMP
-#define GFX_USE_DISPLAY_CONTROLLER_HX8347D
+// Recent models of MIkromedia use a new IL9341 controller
+//#define GFX_USE_DISPLAY_CONTROLLER_HX8347D
+#define GFX_USE_DISPLAY_CONTROLLER_IL9341
 //End Auto Generated Code
 
 
@@ -546,6 +548,13 @@
     #define DISP_VER_RESOLUTION 320
 #endif
 
+// Using IL9341 Display Controller
+#if defined(GFX_USE_DISPLAY_CONTROLLER_IL9341)
+    #define DISP_ORIENTATION    90
+    #define DISP_HOR_RESOLUTION 240
+    #define DISP_VER_RESOLUTION 320
+#endif
+
 // -----------------------------------
 // For RGB GLASS
 // -----------------------------------
@@ -825,6 +834,12 @@
         #define PMP_DATA_SETUP_TIME                (18)    
         #define PMP_DATA_WAIT_TIME                 (82)  // See HX8347 data sheet for details     
         #define PMP_DATA_HOLD_TIME                 (0)    
+
+#elif defined (GFX_USE_DISPLAY_CONTROLLER_IL9341)
+
+        #define PMP_DATA_SETUP_TIME                (0)
+        #define PMP_DATA_WAIT_TIME                 (0)  // See IL9341 data sheet for details
+        #define PMP_DATA_HOLD_TIME                 (1)
 
     #else
         #error "USE_GFX_PMP is defined but no timing values are defined for the selected hardware interface. Define the following timing paraters: PMP_DATA_SETUP_TIME, PMP_DATA_WAIT_TIME, PMP_DATA_HOLD_TIME."

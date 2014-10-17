@@ -8,73 +8,16 @@
 #include "PICconfig.h"
 #include "LCDTerminal.h"
 #include "TouchScreen.h"
-#include "TimeDelay.h"
+#include "TouchGrid.h"
 
 #include "uMedia.h"
 
-
-int TouchGet( void)
-{   // returns 10..1F if screen pressed, 0 = none
-    int  x, y, r;
-
-    // 1. get the latest reading
-    x = TouchGetX();  y = TouchGetY();
-
-    // 2. if one of the two is null the other is too
-    if (( x < 0) || ( y < 0))
-        return 0;
-
-    // 3. identify point on grid (4x4 = 0001yyxx)
-    r  = ((y / ( GetMaxY()/4)) <<2) + ( x / ( GetMaxX()/4) );
-    return r + 0x10;
-
-} // TouchGet
-
-
-int TouchGrid( void)
-{   // wait for a key pressed and debounce
-    int released = 0;           // released counter
-    int pressed = 0;            // pressed counter
-    int code;                   // grid code
-    int r = 0;                  // return value
-
-    // 1. wait for a key pressed for at least 10 loops
-    while ( pressed < 10)
-    {
-        code = TouchGet();
-        if ( code > 0) pressed++;
-        else        pressed = 0;
-
-        DelayMs( 1);
-    }
-
-    // 2. wait for key released for at least 10 loops
-    while ( released < 10)
-    {
-        code = TouchGet();
-        if ( code > 0)
-        {
-            r = code;
-            released = 0;       // not released yet
-            pressed++;          // still pressed, keep counting
-        }
-        else released++;
-
-        DelayMs( 1);
-    } 
-
-    // 3. check if a button was pushed longer than 500ms
-    if ( pressed > 500)  
-        r += 0x80;              // add a flag in bit 7 of the code
-
-    // 4. return code
-    return r;
-
-} // TouchGrid
-
-
 int main( void )
 {
+    code_t q;
+    SHORT sx = (GetMaxX()+1)/4;
+    SHORT sy = (GetMaxY()+1)/4;
+
     // 1. init the MCU
     uMBInit();
 
@@ -82,8 +25,8 @@ int main( void )
     LCDInit();
     DisplayBacklightOn();
 
-    // 3. init touch module (do not use NVM to store calibration data)
-    TouchInit( NULL, NULL, NULL, NULL);
+    // 3. init grid
+    TouchGridInit( 4, 4);
     LCDClear();
 
     // 4. splash screen
@@ -98,19 +41,36 @@ int main( void )
     {
         int x, y;
 
-        // wait for touch on the grid
-        int q = TouchGrid();
+        // 5. draw a grid
+        SetColor( LIGHTGRAY);
+        SetLineType( DASHED_LINE);
+        for( x=1; x<4; x++)
+            Line( x*sx, 0, x*sx, GetMaxY());
+        for( y=1; y<4; y++)
+            Line( 0, y*sy, GetMaxX(), y*sy);
 
-        // remove previous images
-        SetColor( LCD_BACK); ClearDevice();
 
-        // choose color based on how long the pressure has been applied
-        SetColor( ( q & 0x80) ? BRIGHTRED : LCD_FORE );
+        // 6. wait for touch on the grid
+        q = TouchGrid();
 
-        // position a filled tile on the grid
-        y = GetMaxY()/4 * ( ( q >> 2) & 0x3) +5;
-        x = GetMaxX()/4 * (q & 0x3) +5;
-        FillBevel( x, y, x + ( GetMaxX()/4)-10, y + ( GetMaxY()/4)-10, 5);
+        // 7. remove previous images
+        SetColor( LCD_BACK);
+        ClearDevice();
+
+        // 8. choose color based on how long the pressure has been applied
+        SetColor( ( q.option) ? BRIGHTRED : LCD_FORE );
+
+        // 9. position a filled tile on the grid
+        y = sy * q.y;
+        x = sx * q.x;
+        FillBevel( x+5, y+5, x + sx-5, y + sy-5, 5);
+
+// // screen capture
+//        if ( x >160)
+//        {
+//            uMBInit(); FSInit();
+//            ScreenCapture( "4-2-GRID.SCR");
+//        }
 
     } // main loop
 } // main

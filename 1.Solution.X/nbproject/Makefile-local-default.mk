@@ -26,7 +26,7 @@ MP_CPPC="/Applications/microchip/xc32/v1.31/bin/xc32-g++"
 MP_AS="/Applications/microchip/xc32/v1.31/bin/xc32-as"
 MP_LD="/Applications/microchip/xc32/v1.31/bin/xc32-ld"
 MP_AR="/Applications/microchip/xc32/v1.31/bin/xc32-ar"
-DEP_GEN=${MP_JAVA_PATH}java -jar "/Applications/microchip/mplabx/mplab_ide.app/Contents/Resources/mplab_ide/mplab_ide/modules/../../bin/extractobjectdependencies.jar" 
+DEP_GEN=${MP_JAVA_PATH}java -jar "/Applications/microchip/mplabx/mplab_ide.app/Contents/Resources/mplab_ide/mplab_ide/modules/../../bin/extractobjectdependencies.jar"
 MP_CC_DIR="/Applications/microchip/xc32/v1.31/bin"
 MP_CPPC_DIR="/Applications/microchip/xc32/v1.31/bin"
 # MP_BC_DIR is not defined

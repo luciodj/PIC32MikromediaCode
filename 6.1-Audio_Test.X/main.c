@@ -55,7 +55,7 @@ WORD  writeMP3( BYTE b)
 }
 
 
-void writeMP3Register( BYTE reg, unsigned w)
+void writeMP3Register( BYTE reg, WORD w)
 {
     MP3_DCS_Disable();      // disable data bus
     MP3_CS_Enable();        // enable command bus

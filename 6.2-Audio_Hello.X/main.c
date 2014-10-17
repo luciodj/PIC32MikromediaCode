@@ -3,14 +3,11 @@
  * File:   main.c
  *
  */
-
 #include "PICconfig.h"
-
 #include "uMedia.h"
 #include "vs1053.h"
 
 #include "Hello.h"
-
 
 int main( void )
 {
@@ -29,7 +26,7 @@ int main( void )
     // Main Loop
     while( 1 )
     {
-        // 1. init pointer to Flash audio resource
+        // 1. init pointer to flash audio resource
         p = (void*) _Hello;
         length = sizeof( _Hello);
 
@@ -37,7 +34,7 @@ int main( void )
         while ( length > 0 )
             feedMP3( &p, &length);
 
-        flushMP3();                 // FlushMP3 buffer
+        flushMP3();                 // flush the buffer
 
         // 3. repeat after a brief pause
         DelayMs(200);

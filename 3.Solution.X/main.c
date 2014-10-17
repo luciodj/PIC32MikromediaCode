@@ -1,5 +1,5 @@
 /*
- * Project: 3.Solution
+ * Project: 3.Solution - printf
  * 
  * File:   main.c
  *
@@ -48,7 +48,7 @@ int main( void )
     // main loop
     while( 1 )
     {
-        //Log( "Hello World #%04x", i++);
+        Log( "Hello World #%04x", i++);
         printf( "Hello World #%04x", i++);
         //DelayMs(20);
 

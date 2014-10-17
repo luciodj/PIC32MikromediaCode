@@ -2,7 +2,7 @@
  * Project: Storage_Menu
  * File:    main.c
  * 
- * Requires: MAL 1306
+ * Requires: MLA 1306
  */
 
 #include "PICconfig.h"
@@ -17,19 +17,19 @@
 char data[ 400];
 #define N_FILES     16
 
-// 2. Provide a rudimental selection menu
+// Provide a rudimental selection menu
 int Menu( char list[][16], int items)
 {
     int i, j, n;
-    t_code c;
+    code_t c;
 
-    // 2.1 init cursor position, first item selected
+    // 1. init cursor position, first item selected
     n = 0;
 
-    // display item list and wait for user input
+    // 2. display item list and wait for user input
     while ( 1)
     {
-        // 2.2 draw menu list of items
+        // 3. draw menu list of items
         for(i=0; i< items; i++)
         {
             // position each item on the menu centered horizontally and vertically
@@ -54,11 +54,22 @@ int Menu( char list[][16], int items)
                 LCDPut(' ');
         } // for
 
-        // restore default colors
+        // 4. draw touch 'hints'
+        int mx = ( GetMaxX()+1)/2;
+        int w = 40;
+        int h = 20;
+        SetColor( LIGHTGRAY);
+        Line( mx-w, h, mx, 2); LineTo( mx+w, h);    // up arrow
+        Line( mx-w, GetMaxY()-h, mx, GetMaxY()-2); LineTo( mx+w, GetMaxY()-h);    // down arrow
+        int my = ( GetMaxY()+1)/2;
+        w = 20; h = 40;
+        Line( GetMaxX()-w, my-h, GetMaxX()-2, my); LineTo( GetMaxX()-w, my+h);   // right arrow
+        
+        // 5. restore default colors
         LCDSetBackground( LCD_BACK);
         LCDSetColor( LCD_FORE);
 
-        // 2.3 wait for a touch input event
+        // 6. wait for a touch input event
         c = TouchGrid();
 
         if ( c.x == 2)          // right side of the screen -> select
@@ -76,43 +87,20 @@ int Menu( char list[][16], int items)
             if ( n < items-1) n++;
         }
 
-        else if (c.x == 0)      // left side of the screen
-        {
-            FSFILE *fp;
-            int j, i;
-            GFX_COLOR Row[320];
-            
-            // screen capture
-            fp = FSfopen( "screen.scr", FS_WRITE);
-            if ( fp != NULL)
-            {
-                // dump contents of the screen
-                for(j=0; j<=GetMaxY(); j++)
-                {
-                    // row by row
-                    for( i=0; i<=GetMaxX(); i++)
-                    {
-                        Row[ i] = GetPixel( i, j);
-                    }
-
-                    // write buffer to file
-                    FSfwrite( Row, sizeof(Row), 1, fp);
-                }
-
-                // close file
-                FSfclose( fp);
-            }
-        } // screen capture
+// screen capture
+//        else if (c.x == 0)      // left side of the screen
+//        {
+//        } // screen capture
 
     } // while
 
 } // Menu
 
 
-// 3. Let the user choose a file from a list selected by extension
+// Let the user choose a file from a list selected by extension
 void SelectFile( char *fn, char *ext)
 { // fn    pointer to selected filename
-  // ext   "*.AVI" selection criteria
+  // ext   "*.TXT" selection criteria
 
     char list[ N_FILES][16];
     int n = 0;
@@ -120,7 +108,7 @@ void SelectFile( char *fn, char *ext)
 
     while( 1)
     {
-        // 3.1 ensure the file system is initialized, card inserted
+        // 1. ensure the file system is initialized, card inserted
         while( !FSInit())
         {
             LCDCenterString( 0, "Insert Card");
@@ -128,26 +116,28 @@ void SelectFile( char *fn, char *ext)
         }
         LCDClear();
 
-        // 3.2 search for ".ext" files and put them in list
+        // 2. search for ".ext" files and put them in list
         if ( !FindFirst( ext, ATTR_READ_ONLY | ATTR_ARCHIVE, &sr))
         {
-            do{ // while there are files matching
+            do{
+                // while there are files matching
                 // copy the file name
                 strncpy( list[ n++], sr.filename, 16);
+
                 // check if list full
                 if ( n==N_FILES)
                     break;
             } while ( !FindNext( &sr));
         }
 
-        // 3.3 n = listTYPE( list, N_FILES, ext);
+        // 3. n = listTYPE( list, N_FILES, ext);
         if ( n > 0)
         {
             // found at least one file
             n = Menu( list, n);
         }
 
-        // 3.4 if no file found or none selected
+        // 4. if no file found or none selected
         if ( n == 0)
         {
             //report error and allow to swap card
@@ -156,7 +146,7 @@ void SelectFile( char *fn, char *ext)
             LCDClear();
         }
 
-        else // 3.5 valid file selected
+        else // 5. valid file selected
         {
              //form the chosen filename
              strncpy( fn, list[(n-1)], 16);
@@ -175,14 +165,13 @@ int main( void )
     char *p, filename[32];
 
 
-    // 4. initializations
-    uMBInit();                                // init pins and ports
-    LCDInit();                                // inits terminal emulation
+    // 1. initializations
+    uMBInit();                  // init pins and ports
+    LCDInit();                  // inits terminal emulation
     DisplayBacklightOn();
-    TouchGridInit( GetMaxX()/3, GetMaxY()/3); // defines a 3x3 grid
+    TouchGridInit( 3, 3);       // defines a 3x3 grid
 
-
-    // 5. splash screen
+    // 2. splash screen
     LCDClear();
     LCDCenterString( -1, "Menu demo");
     LCDCenterString( +1,  "tap to start");
@@ -191,13 +180,13 @@ int main( void )
     LCDClear();
 
 
-    // 6. Main Loop
+    // 3. Main Loop
     while( 1 )
     {
         LCDClear();
 
         // 6.1 let the user choose a suitanle text file
-        SelectFile( filename, "*.txt");
+        SelectFile( filename, "*.TXT");
         
         // 6.2 try to open a file
         if ( (fp = FSfopen( filename, "r")) == NULL)
@@ -226,7 +215,7 @@ int main( void )
 
         }   // else
 
-        // 7. prompt to continue
+        // 4. prompt to continue
         LCDPutString( "\n Tap to continue");
         TouchGrid();
 

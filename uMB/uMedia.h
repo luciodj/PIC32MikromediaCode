@@ -8,7 +8,9 @@
 #ifndef _MIKROE_uMB
 #define _MIKROE_uMB
 
-#include "uMBConfig.h"
+#include "uMBconfig.h"
+
+#include <xc.h>
 #include "HardwareProfile.h"            // need to know clock freq.
 #include "drv_spi.h"
 #include "Touchscreen.h"

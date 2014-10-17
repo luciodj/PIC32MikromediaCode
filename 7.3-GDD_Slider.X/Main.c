@@ -38,7 +38,7 @@
 #include "Main.h"
 #include "GDD_Screens.h"
 #include "PPS.h"
-#define _SCREENCAPTURE
+//#define _SCREENCAPTURE
 
 #ifdef _SCREENCAPTURE
 #include "MDD File System/FSIO.h"

@@ -8,10 +8,9 @@
 #include "HardwareProfile.h"
 #include "uMedia.h"
 
-#include <Graphics/Graphics.h>
+#include <Graphics/GOL.h>
 #include <TouchScreen.h>
 #include <M25P80.h>
-
 
 int main( void)
 {

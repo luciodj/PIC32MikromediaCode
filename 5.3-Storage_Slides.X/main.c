@@ -3,7 +3,7 @@
  *
  *  File:    main.c
  *
- * Requires: MAL 1306
+ * Requires: MLA 1306
  */
 
 #include "PICconfig.h"
@@ -53,7 +53,7 @@ int PutSlide( char *filename)
         ImageFullScreenDecode( pImageFile, fmt, NULL, NULL);
         IMG_FCLOSE(pImageFile);
     }
-
+   
     // return success
     return( 0);
 } // PutSlide
@@ -70,7 +70,7 @@ int main( void )
     uMBInit();                                // init pins and ports
     LCDInit();                                // inits terminal emulation
     DisplayBacklightOn();
-    TouchGridInit( GetMaxX()/3, GetMaxY()/3); // defines a 3x3 grid
+    TouchGridInit( 3, 3);                     // defines a 3x3 grid
     ImageDecoderInit();                       // init the image decoding lib
 
     // 2. splash screen
